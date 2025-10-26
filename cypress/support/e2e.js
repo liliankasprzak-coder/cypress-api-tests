@@ -1,6 +1,3 @@
-﻿// Configuração de suporte global do Cypress
-// Criado em: 21/10/2025
-// Autor: Lilian
-
-// Importar comandos customizados do exercício2
-import './commands-exercicio2.js';
+﻿// Suporte global do Cypress para os testes de API (Exercício 1)
+// Mantido mínimo: sem comandos de UI.
+// Caso vá utilizar validação de contrato, use helpers em `./schema.js` diretamente nas specs.

@@ -1,22 +1,13 @@
 {
   "name": "cypress-api-tests",
   "version": "1.0.0",
-  "description": "Testes automatizados de API e Web com Cypress",
+  "description": "Testes automatizados de API com Cypress (Exercício 1)",
   "author": "Lilian Kasprzak",
   "license": "MIT",
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test:all": "cypress run",
-    "test:ex1": "cypress run --spec \"cypress/e2e/exercicio1_APIs_tests/**/*.cy.js\"",
-    "test:ex1:patterns": "cypress run --spec \"cypress/e2e/exercicio1_APIs_patterns/**/*.cy.js\"",
-    "test:ex2": "cypress run --spec \"cypress/e2e/exercicio2_commitquality_tests/**/*.cy.js\"",
-    "test:ex2:patterns": "cypress run --spec \"cypress/e2e/exercicio2_commitquality_tests-patterns/**/*.cy.js\"",
-    "test:loja": "cypress run --spec \"cypress/e2e/loja-shopping/**/*.cy.js\"",
-    "test:patterns": "cypress run --spec \"cypress/e2e/exercicio1_APIs_patterns/**/*.cy.js,cypress/e2e/exercicio2_commitquality_tests-patterns/**/*.cy.js\"",
-    "test:add-product": "cypress run --spec \"cypress/e2e/exercicio2_commitquality_tests/tela-add-product.cy.js\"",
-    "test:add-product:pattern": "cypress run --spec \"cypress/e2e/exercicio2_commitquality_tests-patterns/tela-add-product-pattern.cy.js\"",
-    "test:contact-form:pattern": "cypress run --spec \"cypress/e2e/exercicio2_commitquality_tests-patterns/tela-contact-form-pattern.cy.js\""
+    "test:api": "cypress run --spec \"cypress/e2e/exercicio1_APIs_tests/**/*.cy.js\""
   },
   "devDependencies": {
     "@faker-js/faker": "^10.1.0",
@@ -194,11 +185,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liliankasprzak-coder/cypress_api_tests.git"
+    "url": "git+https://github.com/liliankasprzak-coder/cypress-api-tests.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/liliankasprzak-coder/cypress_api_tests/issues"
+    "url": "https://github.com/liliankasprzak-coder/cypress-api-tests/issues"
   },
-  "homepage": "https://github.com/liliankasprzak-coder/cypress_api_tests#readme"
+  "homepage": "https://github.com/liliankasprzak-coder/cypress-api-tests#readme"
 }

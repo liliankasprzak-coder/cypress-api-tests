@@ -1,44 +1,54 @@
-# Dependencies
+## Dependencies
 node_modules/
 
-# Cypress artifacts
+## Cypress artifacts
 cypress/screenshots/
 cypress/videos/
 cypress/downloads/
 
-# Backups and archives
+## Excluir pastas e arquivos não relacionados a API (patterns e UI)
+cypress/e2e/exercicio1_APIs_patterns/
+cypress/e2e/exercicio1_APIs_cenarios_patterns/
+cypress/e2e/exercicio2_commitquality_cenarios/
+cypress/e2e/exercicio2_commitquality_cenarios-patterns/
+cypress/e2e/exercicio2_commitquality_tests/
+cypress/e2e/exercicio2_commitquality_tests-patterns/
+cypress/e2e/loja-shopping/
+
+## Suporte específico de UI
+cypress/support/builders/
+cypress/support/commands/
+cypress/support/config/
+cypress/support/observers/
+cypress/support/pages/
+cypress/support/validators/
+cypress/support/commands-exercicio2.js
+
+## Fixtures de UI
+cypress/fixtures/data-testids.json
+cypress/fixtures/test-file.pdf
+
+## Backups and archives
 *.zip
 backup-*.zip
 .backup-temp/
 
-# Editor/OS
+## Editor/OS
 .vscode/
 .idea/
 .history/
 .DS_Store
 Thumbs.db
 
-# Temp
+## Temp
 .temp/
-.tmp/# Node modules
-node_modules/
+.tmp*
 
-# Cypress output
-cypress/screenshots/
-cypress/videos/
-
-# Logs
+## Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# Environment files
+## Environment files
 .env
 .env.*
-
-# VSCode settings
-.vscode/
