@@ -86,12 +86,7 @@ npx cypress run --spec "cypress/e2e/exercicio1_APIs_tests/1-get-posts.cy.js"
 
 ---
 
-## Notas
-
-- Os testes de UI (CommitQuality) e quaisquer comandos/ferramentas específicas de UI foram removidos deste repositório para manter o foco em API.
-- Caso deseje validar contratos com JSON Schema, utilize os helpers em `cypress/support/schema.js` e armazene os schemas em `cypress/fixtures/schemas/`.
-
----
+ 
 
 ## Contato
 
