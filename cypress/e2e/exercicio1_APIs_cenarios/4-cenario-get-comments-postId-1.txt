@@ -1,0 +1,28 @@
+GET /comments?postId=1
+
+Autora: Lilian Kasprzak
+Data: 22/10/2025
+Endpoint: GET https://jsonplaceholder.typicode.com/comments?postId=1
+
+Funcionalidade: Buscar Comentários por ID do Post
+Como analista de QA eu quero validar o endpoint GET /comments?postId=1 para garantir que a busca de comentários por post funciona corretamente.
+
+Cenário 1: Validar Status Code
+Dado que o endpoint GET /comments?postId=1 está disponível
+Quando eu envio uma requisição GET
+Então o status code deve ser 200
+
+Cenário 2: Validar Tempo de Resposta
+Dado que o endpoint GET /comments?postId=1 está disponível
+Quando eu envio uma requisição GET
+E o tempo de resposta ser menor que 500ms
+Então deve passar e trazer o status 200
+E se o tempo for maior que 500ms deverá falhar
+
+Cenário 3: Validar Schema da Resposta
+Dado que o endpoint GET /comments?postId=1 está disponível
+Quando eu envio uma requisição GET
+Então a resposta deve ser um array de comentários
+E cada comentário deve estar em conformidade com o schema de comment
+E todos os campos obrigatórios devem estar presentes
+E os tipos de dados devem estar corretos

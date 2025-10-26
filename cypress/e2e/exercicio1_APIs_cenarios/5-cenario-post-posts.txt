@@ -1,0 +1,22 @@
+POST /posts
+
+Autora: Lilian Kasprzak
+Data: 22/10/2025
+Endpoint: POST https://jsonplaceholder.typicode.com/posts
+
+Como analista de QA eu quero testar o endpoint POST /posts para garantir que ele cria novos posts corretamente.
+
+Cenário 1: Validar o status code
+Dado que faço uma requisição POST para "/posts" com dados válidos
+Então o status code deve ser 201
+
+Cenário 2: Validar o tempo de resposta
+Dado que faço uma requisição POST para "/posts" com dados válidos
+Quando medir o tempo de resposta
+Então o tempo deve ser menor que 500ms e trazer o status 201
+E se o tempo for maior que 500ms deverá falhar
+
+Cenário 3: Validar o corpo de resposta a nível de schema
+Dado que faço uma requisição POST para "/posts" com dados válidos
+Então o corpo de resposta deve seguir o schema de post
+E deve retornar o post criado com ID gerado

@@ -1,0 +1,27 @@
+Cenários de Teste para PUT /posts/1
+
+Autor: Lilian Kasprzak
+Data: 22/10/2025
+Endpoint: PUT https://jsonplaceholder.typicode.com/posts/1
+
+Funcionalidade: Atualização de Post por ID
+Como analista de QA eu quero validar o endpoint PUT /posts/1 para garantir que a atualização de posts funciona corretamente.
+
+Cenário 1: Validar Status Code
+Dado que o endpoint PUT /posts/1 está disponível
+Quando eu envio uma requisição PUT com dados válidos
+Então o status code deve ser 200
+
+Cenário 2: Validar Tempo de Resposta
+Dado que o endpoint PUT /posts/1 está disponível
+Quando eu envio uma requisição PUT
+E o tempo de resposta ser menor que 500ms
+Então deve passar e trazer o status 200
+E se o tempo for maior que 500ms deverá falhar
+
+Cenário 3: Validar Schema da Resposta
+Dado que o endpoint PUT /posts/1 está disponível
+Quando eu envio uma requisição PUT com dados válidos
+Então a resposta deve estar em conformidade com o schema de post
+E todos os campos obrigatórios devem estar presentes
+E os tipos de dados devem estar corretos

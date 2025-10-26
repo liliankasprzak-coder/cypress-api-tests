@@ -1,0 +1,27 @@
+DELETE /posts/1
+
+Autora: Lilian Kasprzak
+Data: 22/10/2025
+Endpoint: DELETE https://jsonplaceholder.typicode.com/posts/1
+
+Funcionalidade: Exclusão de Post por ID
+Como analista de QA eu quero validar o endpoint DELETE /posts/1 para garantir que a exclusão de posts funciona corretamente.
+
+Cenário 1: Validar Status Code
+Dado que o endpoint DELETE /posts/1 está disponível
+Quando eu envio uma requisição DELETE
+Então o status code deve ser 200
+
+Cenário 2: Validar Tempo de Resposta
+Dado que o endpoint DELETE /posts/1 está disponível
+Quando eu envio uma requisição DELETE
+E o tempo de resposta ser menor que 500ms
+Então deve passar e trazer o status 200
+E se o tempo for maior que 500ms deverá falhar
+
+Cenário 3: Validar Schema da Resposta
+Dado que o endpoint DELETE /posts/1 está disponível
+Quando eu envio uma requisição DELETE
+Então a resposta deve estar em conformidade com o schema de objeto vazio
+E todos os campos obrigatórios devem estar presentes
+E os tipos de dados devem estar corretos

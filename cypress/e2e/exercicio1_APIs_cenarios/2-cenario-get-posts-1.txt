@@ -1,0 +1,22 @@
+GET /posts/1
+
+Autora: Lilian Kasprzak
+Data: 22/10/2025
+Endpoint: GET https://jsonplaceholder.typicode.com/posts/1
+
+Como analista de QA eu quero testar o endpoint GET /posts/1 para garantir que ele retorna um post específico corretamente.
+
+Cenário 1: Validar o status code
+Dado que faço uma requisição GET para "/posts/1"
+Então o status code deve ser 200
+
+Cenário 2: Validar o tempo de resposta
+Dado que faço uma requisição GET para "/posts/1"
+Quando medir o tempo de resposta
+Então o tempo deve ser menor que 500ms e trazer o status 200
+E se o tempo for maior que 500ms deverá falhar
+
+Cenário 3: Validar o corpo de resposta a nível de schema
+Dado que faço uma requisição GET para "/posts/1"
+Então o corpo de resposta deve seguir o schema de post
+E deve retornar um objeto com id, userId, title e body
