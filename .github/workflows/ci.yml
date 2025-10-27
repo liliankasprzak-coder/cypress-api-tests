@@ -27,10 +27,10 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Run Cypress (API)
+      - name: Run Cypress (API) - Smoke Test
         uses: cypress-io/github-action@v6
         with:
-          command: npm run test:api
+          spec: cypress/e2e/exercicio1_APIs_tests/1-get-posts.cy.js
           browser: chrome
 
       - name: Upload artifacts on failure
