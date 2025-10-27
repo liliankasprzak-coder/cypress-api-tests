@@ -34,7 +34,7 @@ Este repositório contém apenas os testes de API do Exercício 1, organizados p
 cypress-api-tests/
 ├── cypress/
 │   ├── e2e/
-│   │   ├── exercicio1_APIs_cenarios/   # Descrição dos cenários (texto)
+│   │   ├── exercicio1_APIs_cenarios/   # Cenários Gherkin salvos em .txt
 │   │   └── exercicio1_APIs_tests/      # Especificações (.cy.js)
 │   ├── fixtures/
 │   │   └── schemas/                    # (Opcional) JSON Schemas para contratos
