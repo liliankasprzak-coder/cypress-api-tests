@@ -1,47 +1,71 @@
-# Cypress API Tests
+<div align="center">
 
-> Testes automatizados de APIs REST usando Cypress
+# 🚀 Cypress API Tests
+
+### Testes automatizados de APIs REST usando Cypress
 
 **Autora:** Lilian Kasprzak  
 **Função:** Analista de QA  
 **Data:** Outubro 2025
 
-[![Cypress Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/liliankasprzak-coder/cypress-api-tests)
-[![API Testing](https://img.shields.io/badge/API-JSONPlaceholder-blue)](https://jsonplaceholder.typicode.com/)
+---
 
-➡️ **[QUICKSTART - Guia Rápido de 3 Passos](QUICKSTART.md)**
+[![Cypress](https://img.shields.io/badge/Cypress-15.5.0-17202C?style=for-the-badge&logo=cypress&logoColor=white)](https://cypress.io)
+[![Node](https://img.shields.io/badge/Node.js-18.x-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/liliankasprzak-coder/cypress-api-tests)
+[![API](https://img.shields.io/badge/API-JSONPlaceholder-FF6C37?style=for-the-badge&logo=json&logoColor=white)](https://jsonplaceholder.typicode.com/)
+[![CI](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/liliankasprzak-coder/cypress-api-tests/actions)
+
+➡️ **[QUICKSTART - Guia Rápido de 3 Passos](QUICKSTART.md)** ⚡
+
+</div>
 
 ---
 
-## Sobre o Projeto
+## 📋 Sobre o Projeto
 
-Este repositório contém testes automatizados de API REST do Exercício 1, validando endpoints do serviço público **JSONPlaceholder**.
+Este repositório contém **testes automatizados de API REST**, validando endpoints do serviço público **JSONPlaceholder** com validações completas de status, schema e performance.
 
-### O que está incluído
+<div align="center">
 
-✅ **Testes de API REST** (GET/POST/PUT/PATCH/DELETE)  
-✅ **Validações de status code**  
-✅ **Validações de tempo de resposta**  
-✅ **Validações de schema** (JSON Schema com AJV)  
-✅ **Cenários Gherkin** documentados  
+### 🎯 O que está incluído
 
-### Endpoints Testados
+</div>
 
-- GET `/posts` - Listar posts
-- GET `/posts/{id}` - Buscar post específico
-- POST `/posts` - Criar post
-- PUT `/posts/{id}` - Atualizar post completo
-- PATCH `/posts/{id}` - Atualizar post parcial
-- DELETE `/posts/{id}` - Deletar post
+| Funcionalidade | Descrição |
+|:---|:---|
+| ✅ **Testes REST** | Cobertura completa (GET/POST/PUT/PATCH/DELETE) |
+| ✅ **Status Code** | Validação de todos os códigos HTTP |
+| ✅ **Performance** | Tempo de resposta < 500ms |
+| ✅ **Schema** | Validação JSON Schema com AJV |
+| ✅ **Gherkin** | Cenários BDD documentados |
+| ✅ **CI/CD** | GitHub Actions automatizado |
+
+### 🔗 Endpoints Testados
+
+```
+GET    /posts           → Listar todos os posts
+GET    /posts/{id}      → Buscar post específico
+POST   /posts           → Criar novo post
+PUT    /posts/{id}      → Atualizar post completo
+PATCH  /posts/{id}      → Atualizar post parcialmente
+DELETE /posts/{id}      → Deletar post
+```
 
 ---
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **Cypress** `^15.5.0` - Framework de testes
-- **JavaScript** - Linguagem de programação
-- **Node.js** - Ambiente de execução
-- **AJV** `^8.17.1` - Validação de JSON Schema
+<div align="center">
+
+| Tecnologia | Versão | Descrição |
+|:---:|:---:|:---|
+| ![Cypress](https://img.shields.io/badge/Cypress-15.5.0-17202C?logo=cypress&logoColor=white) | `^15.5.0` | Framework de testes E2E |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black) | ES6+ | Linguagem de programação |
+| ![Node.js](https://img.shields.io/badge/Node.js-18.x-339933?logo=node.js&logoColor=white) | 18.x | Runtime JavaScript |
+| ![AJV](https://img.shields.io/badge/AJV-8.17.1-23C4DD?logo=json&logoColor=white) | `^8.17.1` | Validação JSON Schema |
+
+</div>
 
 ---
 
